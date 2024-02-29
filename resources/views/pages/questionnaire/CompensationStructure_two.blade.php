@@ -102,11 +102,11 @@
                                     task. Specifically, there are THREE elements of the compensation structure.</p>
                                 <ul>
                                     <li class="mb-2"><strong>Fixed payment: </strong>All members receive a fixed payment
-                                        of $2,000 Lira for completing 4 production periods. 
+                                        of 2,000 Lira for completing 4 production periods. 
                                     </li>
                                     <li class="mb-2"><strong>Winner’s bonus: </strong>The member who completes the most
                                         number of correct answers in total at the end of 4 production periods receives a
-                                        bonus of $1,000 Lira. Coding team members are ranked from 1 to 5 based on their
+                                        bonus of 1,000 Lira. Coding team members are ranked from 1 to 5 based on their
                                         total performance in 4 production periods. Specifically, the team member who
                                         ranks first (1<sup>st</sup>) out of the 5 members in your team receives this
                                         bonus.
@@ -114,8 +114,8 @@
                                     <li>
                                         <strong>Penalty: </strong>
                                         The member who completes the fewest number of correct answers receives a penalty
-                                        of $1,000 Lira. Specifically, the team member that ranks last (5<sup>th</sup>)
-                                        in your team will have $1,000 Lira salary deduction applied.
+                                        of 1,000 Lira. Specifically, the team member that ranks last (5<sup>th</sup>)
+                                        in your team will have 1,000 Lira salary deduction applied.
                                     </li>
                                 </ul>
 

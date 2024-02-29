@@ -169,10 +169,8 @@
                                 <input type="hidden" name="question_part" value="G">
                                 <div class="question">
                                     <p><strong>PART G: Please respond to the following questions.</strong></p>
-
-
-                                    <p>(1) To what extent do you feel competitive against those colleagues who would be
-                                        able to view the descriptions of your identified shortcut/s?</p>
+                                    <p>(1) To what extent do you feel competitive about the colleague who is ranked #2?
+                                    </p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                         <span><input type="radio" id="soft_one" name="question_one" value="1">
@@ -192,10 +190,65 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">(Not at all)</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">(To a moderate extent)</div>
+                                        <div class="col-md-4 text-center ps-4">(To a great extent)</div>
+                                    </div>
+
+                                    <p class="mt-5">(2) To what extent do you feel competitive about the colleague who is ranked #4?
+                                    </p>
+
+                                    <div class="number_radio d-flex justify-content-between">
+                                        <span><input type="radio" id="soft_two_one" name="question_two" value="1">
+                                            <label for="soft_two_one">1</label></span>
+                                        <span><input type="radio" id="soft_two_two" name="question_two" value="2">
+                                            <label for="soft_two_two">2</label></span>
+                                        <span><input type="radio" id="soft_two_three" name="question_two" value="3">
+                                            <label for="soft_two_three">3</label></span>
+                                        <span><input type="radio" id="soft_two_four" name="question_two" value="4">
+                                            <label for="soft_two_four">4</label></span>
+                                        <span><input type="radio" id="soft_two_five" name="question_two" value="5">
+                                            <label for="soft_two_five">5</label></span>
+                                        <span><input type="radio" id="soft_two_six" name="question_two" value="6">
+                                            <label for="soft_two_six">6</label></span>
+                                        <span><input type="radio" id="soft_two_seven" name="question_two" value="7">
+                                            <label for="soft_two_seven">7</label></span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-md-3 me-1">(Not at all)</div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-3 me-4">(To a moderate extent)</div>
+                                        <div class="col-md-4 text-center ps-4">(To a great extent)</div>
+                                    </div>
+
+
+                                    <p class="mt-5">(3) To what extent do you feel competitive about the colleague who is ranked #5?
+                                    </p>
+
+                                    <div class="number_radio d-flex justify-content-between">
+                                        <span><input type="radio" id="soft_three_one" name="question_three" value="1">
+                                            <label for="soft_three_one">1</label></span>
+                                        <span><input type="radio" id="soft_three_two" name="question_three" value="2">
+                                            <label for="soft_three_two">2</label></span>
+                                        <span><input type="radio" id="soft_three_three" name="question_three" value="3">
+                                            <label for="soft_three_three">3</label></span>
+                                        <span><input type="radio" id="soft_three_four" name="question_three" value="4">
+                                            <label for="soft_three_four">4</label></span>
+                                        <span><input type="radio" id="soft_three_five" name="question_three" value="5">
+                                            <label for="soft_three_five">5</label></span>
+                                        <span><input type="radio" id="soft_three_six" name="question_three" value="6">
+                                            <label for="soft_three_six">6</label></span>
+                                        <span><input type="radio" id="soft_three_seven" name="question_three" value="7">
+                                            <label for="soft_three_seven">7</label></span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-md-3 me-1">(Not at all)</div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-3 me-4">(To a moderate extent)</div>
+                                        <div class="col-md-4 text-center ps-4">(To a great extent)</div>
                                     </div>
 
                                 </div>
@@ -220,7 +273,7 @@
 @endpush
 @push('page-js')
     <script>
-        // Disable next button untill all questions are not answered
+        // Disable next button until all questions are not answered
         const container = document.querySelector('.question');
         const nextButton = document.getElementById('nextButton');
         const radioSets = container.querySelectorAll('input[type="radio"]');

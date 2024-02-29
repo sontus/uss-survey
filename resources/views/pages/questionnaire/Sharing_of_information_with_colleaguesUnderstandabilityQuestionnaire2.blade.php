@@ -112,7 +112,7 @@
                                                 for="question_one1">&nbsp;&nbsp;False</label></li>
                                     </ul>
                                     <ul style="list-style-type:'2.';">
-                                        <li>&nbsp;&nbsp; If your colleagues can view the description of shortcuts you
+                                        <li>&nbsp;&nbsp; If your colleagues can view the details of shortcuts you
                                             have identified, this knowledge will help them to identify shortcuts for
                                             their clients.
                                         </li>
@@ -127,7 +127,7 @@
 
                                     <ul style="list-style-type:'3.';">
                                         <li>&nbsp;&nbsp;Your colleagues can learn from the shortcuts you have identified
-                                            only if you allow them to view the descriptions of your shortcuts.
+                                            only if you allow them to view the details of your shortcuts.
                                         </li>
                                     </ul>
                                     <ul class="sq_ul questionnaire_3">

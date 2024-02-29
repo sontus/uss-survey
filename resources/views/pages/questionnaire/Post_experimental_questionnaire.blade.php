@@ -192,10 +192,7 @@
                                         </div>
                                         <div class="col-md-3"></div>
                                     </div>
-                                    <p>1. To what extent would you be willing to allow your colleagues to view the
-                                        description of the shortcuts you have discovered, by enabling the new function
-                                        of
-                                        the upgraded software?</p>
+                                    <p>1. To what extent are you willing to share your identified shortcuts with your colleagues, by enabling the new feature of the upgraded software?</p>
                                     <div class="num-radio-section">
                                         <div class="number_radio">
                                         <span>
@@ -228,14 +225,12 @@
                                         </span>
                                         </div>
                                     </div>
-                                    <p class="mb-0">2. If you were to share the description of any of the four shortcuts
-                                        that you have discovered, how many shortcuts would you like to share with your
-                                        colleagues?</p>
-
-
+                                    <p class="mb-0">2. How many shortcuts are you willing to share with your colleagues?
+                                    </p>
                                     <ul>
-                                        <p><b><u>All</u> of your colleagues will receive answer sheets for the number of
-                                                shortcuts that you select below.</b></p>
+                                        <p><b><u>All</u> of your colleagues will view the details for the number of shortcuts that you select below.</b></p>
+                                        <li><label><input type="radio" id="question_5" name="question_two"
+                                                          value="0 shortcut">&nbsp;&nbsp;0 shortcut</label></li>
                                         <li><input type="radio" required id="question_two" name="question_two"
                                                    value="1 shortcut"><label for="question_two">&nbsp;&nbsp;1
                                                 shortcut </label>
@@ -249,8 +244,6 @@
                                         </li>
                                         <li><label><input type="radio" required id="question_4" name="question_two"
                                                           value="4 shortcut">&nbsp;&nbsp;4 shortcuts</label></li>
-                                        <li><label><input type="radio" id="question_5" name="question_two"
-                                                          value="No shortcuts">&nbsp;&nbsp;No shortcuts</label></li>
 
                                     </ul>
                                 </div>

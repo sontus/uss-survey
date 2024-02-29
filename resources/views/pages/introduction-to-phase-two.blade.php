@@ -99,7 +99,7 @@
                     <div class="card w-100 h-100">
                         <div class="card-body">
                             <div class="title text-center w-100 mt-5 mb-4">
-                                <h5>Introduction to Phase 2 </h5>
+                                <h5>Introduction to <span class="upp">Phase 2</span> </h5>
                             </div>
                             <br>
                             <div class="question">

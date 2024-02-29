@@ -107,12 +107,12 @@
                                     task. Specifically, there are TWO elements of the compensation structure</p>
                                 <br>
                                 <ul>
-                                    <li><strong>Fixed payment: </strong>All members receive a fixed payment of $1,600
+                                    <li><strong>Fixed payment: </strong>All members receive a fixed payment of 1,600
                                         Lira for completing 4 production periods.
                                     </li>
                                     <li><strong>Winner’s bonus: </strong>The member who completes the most number of
                                         correct answers in total at the end of 4 production periods receives a bonus of
-                                        $2,000 Lira. Coding team members are ranked from 1 to 5 based on their total
+                                        2,000 Lira. Coding team members are ranked from 1 to 5 based on their total
                                         performance in 4 production periods. Specifically, the team member who ranks
                                         first (1st) out of the 5 members in your team receives this bonus.
                                     </li>

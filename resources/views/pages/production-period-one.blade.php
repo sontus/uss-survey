@@ -677,8 +677,11 @@
             });
         }
 
-        // count down timer
+        @if(config('common.app') === 'local')
+        countdown(".remainingTime", 1, 0);
+        @else
         countdown(".remainingTime", 8, 0);
+        @endif
 
         function countdown(elementName, minutes, seconds) {
             var element, endTime, hours, mins, msLeft, time;

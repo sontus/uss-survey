@@ -188,11 +188,8 @@
                                             coding team
                                             members.</strong>
                                     </div>
-                                    <p class="mt-5">1. To what extent would you be willing to allow your colleagues to
-                                        view the
-                                        description of the shortcuts you have discovered, by enabling the new function
-                                        of
-                                        the upgraded software?</p>
+                                    <p class="mt-5">1. To what extent are you willing to share your identified shortcuts with your colleagues, by enabling the new feature of the upgraded software?
+                                    </p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                         <span>
@@ -213,9 +210,9 @@
                                         </span>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-4 me-3">(not at all)</div>
-                                        <div class="col-md-4 me-2">(To a moderate extent)</div>
-                                        <div class="col-md-4 text-center">(To a great extent)</div>
+                                        <div class="col-md-4 me-3">Not at all</div>
+                                        <div class="col-md-4 me-2">To a moderate extent</div>
+                                        <div class="col-md-4 text-center">To a great extent</div>
                                     </div>
 
 

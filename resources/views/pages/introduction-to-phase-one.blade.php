@@ -6,13 +6,9 @@
 @push('page-css')
     <style>
         .main_card {
-            /* border: 2px solid #6f6f6f65; */
             margin: 20px 10px;
             height: 90vh;
             width: 100%;
-
-            /* background-color: #fff; */
-
         }
 
         .pre_btn {
@@ -123,7 +119,7 @@
                     <div class="card w-100 h-100">
                         <div class="card-body">
                             <div class="title text-center w-100 mt-5 mb-4">
-                                <h5>Introduction to Phase 1</h5>
+                                <h5>Introduction to <span class="upp">Phase</span> 1</h5>
                             </div>
                             <br>
                             <div class="question">

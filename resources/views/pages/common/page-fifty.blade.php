@@ -185,10 +185,10 @@
 
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">Not at all</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">To a moderate extent</div>
+                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
                                     </div>
 
                                     {{-- 2nd --}}
@@ -216,10 +216,10 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">Not at all</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">To a moderate extent</div>
+                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
                                     </div>
 
                                     {{-- 3rd --}}
@@ -245,10 +245,10 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">Not at all</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">To a moderate extent</div>
+                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
                                     </div>
 
                                 </div>

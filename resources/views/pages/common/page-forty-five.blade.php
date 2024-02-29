@@ -139,13 +139,10 @@
                                 <div class="question">
                                     <p><strong>PART B: Please answer the following questions carefully.</strong></p>
                                     <ul>
-                                        <span>1. At Festina Services, could you choose the specific colleagues who can view the description of the shortcuts you have discovered?</span>
-                                        <li><label><input type="radio" id="html" name="question_one" value="Yes"
-                                                          required>&nbsp;&nbsp;Yes - I can choose which colleague (or
-                                                colleagues) to view the shortcuts I discovered.</label></li>
-                                        <li><label><input type="radio" id="html" name="question_one" value="No">&nbsp;&nbsp;No
-                                                - If I choose to share the shortcuts I discovered, all my colleagues in
-                                                the coding team can see these shortcuts.
+                                        <span>1. At Festina Services, can you choose which coding team member can see the shortcuts you have identified?</span>
+                                        <li><label><input type="radio" id="html" name="question_one" value="Yes" required>&nbsp;&nbsp;Yes - I can choose the coding team member (or members) who can view the shortcuts I identified.
+                                            </label></li>
+                                        <li><label><input type="radio" id="html" name="question_one" value="No">&nbsp;&nbsp;No - If I choose to share the shortcuts I identified, all coding team members can see these shortcuts.
                                             </label></li>
                                     </ul>
                                     <br>
