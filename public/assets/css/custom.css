@@ -69,3 +69,6 @@ input::-webkit-inner-spin-button {
         font-weight: bold;
     }
 }
+span.upp{
+    text-transform: uppercase;
+}

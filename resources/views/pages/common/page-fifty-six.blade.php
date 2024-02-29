@@ -74,13 +74,9 @@
 
         @media only screen and (max-width: 1030px) {
             .main_card {
-                /* border: 2px solid #6f6f6f65; */
                 margin: 5px 5px;
                 height: 90vh !important;
                 width: 100%;
-
-                /* background-color: #fff; */
-
             }
 
             .cm_row {
@@ -97,8 +93,6 @@
                 position: absolute;
                 bottom: 15px;
                 width: 100%;
-
-                /* justify-content: space-between; */
             }
 
             .pre_btn {
@@ -112,30 +106,81 @@
         }
 
         .number_radio input[type="radio"] {
-            /* Add if not using autoprefixer */
-            -webkit-appearance: none;
-            appearance: none;
-            /* For iOS < 15 to remove gradient background */
+            display: none;
             background-color: #d23d3d;
-            /* Not removed via appearance */
             margin: 0;
 
         }
 
-        .number_radio input[type="radio"]:checked + label {
+        .number_radio input[type="radio"]:checked + label:not(.checkbox-label) {
             color: rgb(250, 246, 246);
             transition: all 500ms;
             background: rgb(31, 148, 243);
         }
 
-        .number_radio label {
+        .number_radio label:not(.checkbox-label) {
             padding-bottom: 2px;
             width: 25px;
-
             height: 25px;
             text-align: center;
             border: 1px solid black;
             border-radius: 50%;
+        }
+
+        .number_radio label.checkbox-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .number_radio label.checkbox-label div {
+            height: 25px;
+            width: 25px;
+            border: 1px solid black;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .number_radio label.checkbox-label div .checkmark-sign {
+            display: none;
+        }
+
+        .number_radio .checkbox-ratio[type="radio"]:checked + label.checkbox-label div {
+            color: rgb(250, 246, 246);
+            transition: all 500ms;
+            background: rgb(31, 148, 243);
+        }
+
+        .number_radio .checkbox-ratio[type="radio"]:checked + label.checkbox-label div .checkmark-sign {
+            display: block;
+        }
+
+        .number_radio .d-flex {
+            width: calc(100% / 8);
+            align-items: center;
+            text-align: center;
+        }
+
+        .number_radio .d-flex:nth-child(1) {
+            align-items: start;
+        }
+
+        .number_radio .d-flex:nth-child(2) {
+            margin-left: -46px;
+        }
+
+        .number_radio .d-flex:nth-last-child(2) {
+            align-items: end;
+            margin-left: -46px;
+        }
+
+        .number_radio .d-flex:nth-last-child(1) {
+            margin-left: 40px;
+        }
+
+        .number_radio .d-flex input[type="checkbox"] {
+            height: 25px;
+            width: 25px;
         }
     </style>
 @endpush
@@ -164,38 +209,158 @@
                                 <div class="question">
                                     <p><strong>PART J: Please respond to the following questions.</strong></p>
 
-
-                                    <p>(1) How likely is it that your colleagues will share with you the shortcuts they
-                                        have identified if they have options to do so in the future?</p>
-
+                                    <p>To what extent do you agree with the following statements</p>
+                                    <p>(1) I share shortcuts with my colleague ranked #2 because my colleague will also share shortcuts with me.</p>
                                     <div class="number_radio d-flex justify-content-between">
-                                            <span><input type="radio" id="soft_one" name="question_one" value="1">
+                                        <div
+                                            class="d-flex flex-column"> <span><input
+                                                    type="radio" id="soft_one" name="question_one" value="1">
                                                 <label for="soft_one">1</label></span>
+                                            <div>Strongly Disagree</div>
+                                        </div>
+                                        <div class="d-flex flex-column">
                                         <span><input type="radio" id="soft_two" name="question_one" value="2">
                                                 <label for="soft_two">2</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column ">
                                         <span><input type="radio" id="soft_three" name="question_one" value="3">
                                                 <label for="soft_three">3</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
                                         <span><input type="radio" id="soft_four" name="question_one" value="4">
                                                 <label for="soft_four">4</label></span>
+                                            <div>Neither Disagree nor Agree</div>
+                                        </div>
+                                        <div class="d-flex flex-column">
                                         <span><input type="radio" id="soft_five" name="question_one" value="5">
                                                 <label for="soft_five">5</label></span>
+                                            <div></div>
+                                        </div>
+                                        <div class="d-flex flex-column ">
                                         <span><input type="radio" id="soft_six" name="question_one" value="6">
                                                 <label for="soft_six">6</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
                                         <span><input type="radio" id="soft_seven" name="question_one" value="7">
                                                 <label for="soft_seven">7</label></span>
+                                            <div>Strongly Agree</div>
+                                        </div>
+                                        <div style="width: 20%"
+                                             class="d-flex flex-column align-items-center justify-content-end">
+                                                <span>
+                                                    <input type="radio" id="soft_eight" class="checkbox-ratio"
+                                                           name="question_one"
+                                                           value="7">
+                                                    <label class="checkbox-label" for="soft_eight">
+                                                        <div><span class="checkmark-sign">&#10004;</span></div>
+                                                        I did not share shortcuts
+                                                        with this colleague
+                                                    </label>
+                                                </span>
+                                        </div>
                                     </div>
 
-                                    <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                    <p class="mt-3">(2) I share shortcuts with my colleague ranked #4 because my colleague will also share shortcuts with me.</p>
+                                    <div class="number_radio d-flex justify-content-between">
+                                        <div
+                                            class="d-flex flex-column"> <span><input
+                                                    type="radio" id="soft_two_one" name="question_two" value="1">
+                                                <label for="soft_two_one">1</label></span>
+                                            <div>Strongly Disagree</div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_two_two" name="question_two" value="2">
+                                                <label for="soft_two_two">2</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column ">
+                                        <span><input type="radio" id="soft_two_three" name="question_two" value="3">
+                                                <label for="soft_two_three">3</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_two_four" name="question_two" value="4">
+                                                <label for="soft_two_four">4</label></span>
+                                            <div>Neither Disagree nor Agree</div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_two_five" name="question_two" value="5">
+                                                <label for="soft_two_five">5</label></span>
+                                            <div></div>
+                                        </div>
+                                        <div class="d-flex flex-column ">
+                                        <span><input type="radio" id="soft_two_six" name="question_two" value="6">
+                                                <label for="soft_two_six">6</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_two_seven" name="question_two" value="7">
+                                                <label for="soft_two_seven">7</label></span>
+                                            <div>Strongly Agree</div>
+                                        </div>
+                                        <div style="width: 20%"
+                                             class="d-flex flex-column align-items-center justify-content-end">
+                                                <span>
+                                                    <input type="radio" id="soft_two_eight" class="checkbox-ratio"
+                                                           name="question_two"
+                                                           value="7">
+                                                    <label class="checkbox-label" for="soft_two_eight">
+                                                        <div><span class="checkmark-sign">&#10004;</span></div>
+                                                        I did not share shortcuts
+                                                        with this colleague
+                                                    </label>
+                                                </span>
+                                        </div>
                                     </div>
+                                    <p class="mt-3">(3) I share shortcuts with my colleague ranked #5 because my colleague will also share shortcuts with me.</p>
 
+                                    <div class="number_radio d-flex justify-content-between">
+                                        <div
+                                            class="d-flex flex-column"> <span><input
+                                                    type="radio" id="soft_three_one" name="question_three" value="1">
+                                                <label for="soft_three_one">1</label></span>
+                                            <div>Strongly Disagree</div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_three_two" name="question_three" value="2">
+                                                <label for="soft_three_two">2</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column ">
+                                        <span><input type="radio" id="soft_three_three" name="question_three" value="3">
+                                                <label for="soft_three_three">3</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_three_four" name="question_three" value="4">
+                                                <label for="soft_three_four">4</label></span>
+                                            <div>Neither Disagree nor Agree</div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_three_five" name="question_three" value="5">
+                                                <label for="soft_three_five">5</label></span>
+                                            <div></div>
+                                        </div>
+                                        <div class="d-flex flex-column ">
+                                        <span><input type="radio" id="soft_three_six" name="question_three" value="6">
+                                                <label for="soft_three_six">6</label></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                        <span><input type="radio" id="soft_three_seven" name="question_three" value="7">
+                                                <label for="soft_three_seven">7</label></span>
+                                            <div>Strongly Agree</div>
+                                        </div>
+                                        <div style="width: 20%"
+                                             class="d-flex flex-column align-items-center justify-content-end">
+                                                <span>
+                                                    <input type="radio" id="soft_three_eight" class="checkbox-ratio"
+                                                           name="question_three"
+                                                           value="7">
+                                                    <label class="checkbox-label" for="soft_three_eight">
+                                                        <div><span class="checkmark-sign">&#10004;</span></div>
+                                                        I did not share shortcuts
+                                                        with this colleague
+                                                    </label>
+                                                </span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
-
-                                    {{-- <a href="{{ route('Post_experimental_questionnaire_five') }}" style="padding: 5px 20px 5px 20px;" type="button" class="btn btn-danger next_btn btn-sm">Next</a> --}}
                                     <button id="nextButton" disabled style="padding: 5px 20px 5px 20px;" type="submit"
                                             class="btn btn-danger next_btn btn-sm">Next
                                     </button>

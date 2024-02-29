@@ -159,7 +159,7 @@
                                 <input type="hidden" name="question_set" value="All">
                                 <input type="hidden" name="question_part" value="D">
                                 <div class="question">
-                                    <p><strong>PART D: To help us better understand your decisions, please respond to
+                                    <p><strong>PART C: To help us better understand your decisions, please respond to
                                             the following questions</strong></p>
 
                                     <p>(1) To what extent did you consider the perspective of your colleagues who rank
@@ -185,10 +185,10 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">Not at all</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">To a moderate extent</div>
+                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
                                     </div>
 
                                 </div>

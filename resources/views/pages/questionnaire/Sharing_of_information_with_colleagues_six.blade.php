@@ -111,7 +111,7 @@
                                     </ul>
                                     <p>4. You are the only member in Festina’s coding team who is using the upgraded
                                         software with a feature that can be enabled to allow others to view the
-                                        descriptions of the shortcuts you have discovered.</p>
+                                        details of the shortcuts you have discovered.</p>
                                     <ul class="questionnaire_2">
                                         <li><input type="radio" id="true" value="true" name="question_two"
                                                    required><label for="true">&nbsp;&nbsp;True</label></li>
@@ -120,7 +120,7 @@
 
                                     </ul>
                                     <p>5. If you enable the new function of the upgraded software, who can view the
-                                        descriptions of the shortcuts you have discovered?</p>
+                                        details of the shortcuts you have discovered?</p>
                                     <ul class="questionnaire_3">
                                         <li><input type="radio" id="all" value="all"
                                                    name="question_three" required><label for="all">&nbsp;&nbsp;All

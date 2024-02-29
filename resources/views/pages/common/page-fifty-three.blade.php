@@ -67,7 +67,6 @@
         }
 
 
-
         .cm_row {
             display: grid;
             grid-template-columns: 3fr 6fr 3fr;
@@ -161,10 +160,8 @@
                                 <div class="question">
                                     <p><strong>PART H: Please respond to the following questions.</strong></p>
 
-
-                                    <p>(1) To what extent do you believe that allowing <u>all of your colleagues</u> to
-                                        view the descriptions of your identified shortcuts is likely to reduce your
-                                        chances of winning reward in the competition?</p>
+                                    <p>To what extent do you agree with the following statement</p>
+                                    <p>(1) Sharing shortcuts with my colleagues is likely to reduce my chances of winning the bonus in the competition.</p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                             <span><input type="radio" id="soft_one" name="question_one" value="1">
@@ -184,10 +181,10 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">(Strongly Disagree)</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">(Neither Disagree nor Agree)</div>
+                                        <div class="col-md-4 text-center ps-4">(Strongly Agree)</div>
                                     </div>
 
                                 </div>

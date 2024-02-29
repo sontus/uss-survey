@@ -11,20 +11,6 @@ use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Xml\Report;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -179,7 +165,7 @@ Route::post('page-fifty-one-save',[HomeControllerThree::class, 'page_fifty_one_s
 Route::get('page-fifty-two',[HomeControllerThree::class, 'page_fifty_two'])->name('page-fifty-two')->middleware(['preventBackHistory','prolificValidation']);
 Route::post('page-fifty-two-save',[HomeControllerThree::class, 'page_fifty_two_save'])->name('page-fifty-two-save')->middleware(['preventBackHistory','prolificValidation']);
 // new page 53 A & B
-Route::get('page-fifty-three',[HomeControllerThree::class, 'page_fifty_three'])->name('page-fifty-three')->middleware(['preventBackHistory','prolificValidation']);
+    Route::get('page-fifty-three',[HomeControllerThree::class, 'page_fifty_three'])->name('page-fifty-three')->middleware(['preventBackHistory','prolificValidation']);
 Route::post('page-fifty-three-save',[HomeControllerThree::class, 'page_fifty_three_save'])->name('page-fifty-three-save')->middleware(['preventBackHistory','prolificValidation']);
 // new page 54 C & D
 Route::get('page-fifty-four',[HomeControllerThree::class, 'page_fifty_four'])->name('page-fifty-four')->middleware(['preventBackHistory','prolificValidation']);

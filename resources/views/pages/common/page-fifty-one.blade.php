@@ -67,7 +67,6 @@
         }
 
 
-
         .cm_row {
             display: grid;
             grid-template-columns: 3fr 6fr 3fr;
@@ -187,7 +186,8 @@
                                         <div class="col-md-4 text-center ps-4">(extremely)</div>
                                     </div>
                                     {{-- 2nd --}}
-                                    <p class="mt-3">(5) To what extent did you feel <u>troubled</u> about those of your colleagues
+                                    <p class="mt-3">(5) To what extent did you feel <u>troubled</u> about those of your
+                                        colleagues
                                         who rank very low? </p>
 
                                     <div class="number_radio d-flex justify-content-between">
@@ -215,7 +215,8 @@
                                         <div class="col-md-4 text-center ps-4">(extremely)</div>
                                     </div>
                                     {{-- 3rd --}}
-                                    <p class="mt-3">(6) To what extent did you feel <u>agitated</u> about those of your colleagues
+                                    <p class="mt-3">(6) To what extent did you feel <u>agitated</u> about those of your
+                                        colleagues
                                         who rank very low?</p>
 
                                     <div class="number_radio d-flex justify-content-between">

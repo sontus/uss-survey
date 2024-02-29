@@ -103,9 +103,9 @@
 
                                 <ul>
                                     <li class="mb-2">You can help your colleagues to find shortcuts for their clients by
-                                        sharing the descriptions of the shortcuts you have found for your clients.
+                                        sharing the details of the shortcuts you have found for your clients.
                                     </li>
-                                    <li class="mb-2">If you share the descriptions of shortcuts you have found, they
+                                    <li class="mb-2">If you share the details of shortcuts you have found, they
                                         will not be able to just copy and apply your shortcuts onto their clients since
                                         they do not work on exactly the same clients as yours. They will need to modify
                                         your shortcuts further to make them work on their clients.

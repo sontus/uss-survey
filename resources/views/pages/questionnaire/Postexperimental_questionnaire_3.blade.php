@@ -120,9 +120,8 @@
                                 <h5>Post experimental questionnaire</h5>
                             </div>
                             <br>
-                            <p class="me-3 ms-5">2. If you were to share the description of any of the four shortcuts
-                                that you have discovered, how many shortcuts would you like to share with each of the
-                                following colleagues?</p>
+                            <p class="me-3 ms-5">2. How many shortcuts are you willing to share with each colleague?
+                            </p>
 
                             <form action="{{ route('post-experimental-main-three')}}" method="POST">
                                 @csrf
@@ -139,8 +138,8 @@
                                                 <th style="border-right: 1px solid #000;">Current rank of Festina’s
                                                     coding team members
                                                 </th>
-                                                <th>Your chosen colleagues will receive answer sheets for the number of
-                                                    shortcuts that you select below.
+                                                <th>Only your chosen colleagues will view the details for the number of shortcuts that you
+                                                    select below.
                                                 </th>
                                             </tr>
                                             <tr>

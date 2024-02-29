@@ -162,8 +162,8 @@
                                     <p><strong>PART K: Please respond to the following questions.</strong></p>
 
 
-                                    <p>(1) To what extent do you think sharing your shortcut descriptions will help
-                                        colleagues who receive very low rank to avoid penalties?</p>
+                                    <p>To what extent do you think sharing your shortcut details will help colleagues with very low ranks to avoid penalties?
+                                    </p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                             <span><input type="radio" id="soft_one" name="question_one" value="1">
@@ -183,16 +183,14 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(not at all)</div>
+                                        <div class="col-md-3 me-1">(Not at all)</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(moderate)</div>
-                                        <div class="col-md-4 text-center ps-4">(extremely)</div>
+                                        <div class="col-md-3 me-4">(To a moderate extent)</div>
+                                        <div class="col-md-4 text-center ps-4">(To a great extent)</div>
                                     </div>
 
                                 </div>
                                 <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
-
-                                    {{-- <a href="{{ route('Post_experimental_questionnaire_five') }}" style="padding: 5px 20px 5px 20px;" type="button" class="btn btn-danger next_btn btn-sm">Next</a> --}}
                                     <button id="nextButton" disabled style="padding: 5px 20px 5px 20px;" type="submit"
                                             class="btn btn-danger next_btn btn-sm">Next
                                     </button>
