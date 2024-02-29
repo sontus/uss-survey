@@ -1,0 +1,71 @@
+/* custom button */
+body{
+    height: 100vh !important;
+    width: 100% !important;
+    overflow: auto;
+}
+.custom-btn {
+    background-color: red;
+    padding: 5px 30px 5px 30px;
+    color: #ffffff;
+}
+
+.next-custom-btn {
+    background-color: red;
+    padding: 5px 45px 5px 45px;
+    color: #ffffff;
+}
+.card .card-body{
+    overflow: scroll;
+}
+.container{
+    height: 100vh !important;
+    overflow: hidden;
+}
+.custom-btn:hover,
+.next-custom-btn:hover {
+    color: #faf5f5;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    background-color: rgb(184, 24, 24);
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.table td {
+    padding: 0px;
+    text-align: center;
+}
+
+.table th {
+    padding: 0px 2px;
+    font-size: 12px !important;
+}
+
+.borderBt {
+    border-bottom: 1px solid black;
+}
+
+.border_all {
+    border: 1px solid black;
+}
+
+.border_all td {
+    padding: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading th {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

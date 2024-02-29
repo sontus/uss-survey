@@ -1,0 +1,153 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('useranswer', function (Blueprint $table) {
+            $table->id();
+            $table->string('user_id');
+            $table->string('period');
+            $table->integer('box_11')->nullable();
+            $table->integer('box_12')->nullable();
+            $table->integer('box_13')->nullable();
+            $table->integer('box_14')->nullable();
+            $table->integer('box_15')->nullable();
+            $table->integer('box_16')->nullable();
+            $table->integer('box_21')->nullable();
+            $table->integer('box_22')->nullable();
+            $table->integer('box_23')->nullable();
+            $table->integer('box_24')->nullable();
+            $table->integer('box_25')->nullable();
+            $table->integer('box_26')->nullable();
+            $table->integer('box_31')->nullable();
+            $table->integer('box_32')->nullable();
+            $table->integer('box_33')->nullable();
+            $table->integer('box_34')->nullable();
+            $table->integer('box_35')->nullable();
+            $table->integer('box_36')->nullable();
+            $table->integer('box_41')->nullable();
+            $table->integer('box_42')->nullable();
+            $table->integer('box_43')->nullable();
+            $table->integer('box_44')->nullable();
+            $table->integer('box_45')->nullable();
+            $table->integer('box_46')->nullable();
+            $table->integer('box_51')->nullable();
+            $table->integer('box_52')->nullable();
+            $table->integer('box_53')->nullable();
+            $table->integer('box_54')->nullable();
+            $table->integer('box_55')->nullable();
+            $table->integer('box_56')->nullable();
+            $table->integer('box_61')->nullable();
+            $table->integer('box_62')->nullable();
+            $table->integer('box_63')->nullable();
+            $table->integer('box_64')->nullable();
+            $table->integer('box_65')->nullable();
+            $table->integer('box_66')->nullable();
+            $table->integer('box_71')->nullable();
+            $table->integer('box_72')->nullable();
+            $table->integer('box_73')->nullable();
+            $table->integer('box_74')->nullable();
+            $table->integer('box_75')->nullable();
+            $table->integer('box_76')->nullable();
+            $table->integer('box_81')->nullable();
+            $table->integer('box_82')->nullable();
+            $table->integer('box_83')->nullable();
+            $table->integer('box_84')->nullable();
+            $table->integer('box_85')->nullable();
+            $table->integer('box_86')->nullable();
+            $table->integer('box_91')->nullable();
+            $table->integer('box_92')->nullable();
+            $table->integer('box_93')->nullable();
+            $table->integer('box_94')->nullable();
+            $table->integer('box_95')->nullable();
+            $table->integer('box_96')->nullable();
+            $table->integer('box_101')->nullable();
+            $table->integer('box_102')->nullable();
+            $table->integer('box_103')->nullable();
+            $table->integer('box_104')->nullable();
+            $table->integer('box_105')->nullable();
+            $table->integer('box_106')->nullable();
+            $table->integer('box_111')->nullable();
+            $table->integer('box_112')->nullable();
+            $table->integer('box_113')->nullable();
+            $table->integer('box_114')->nullable();
+            $table->integer('box_115')->nullable();
+            $table->integer('box_116')->nullable();
+            $table->integer('box_121')->nullable();
+            $table->integer('box_122')->nullable();
+            $table->integer('box_123')->nullable();
+            $table->integer('box_124')->nullable();
+            $table->integer('box_125')->nullable();
+            $table->integer('box_126')->nullable();
+            $table->integer('box_131')->nullable();
+            $table->integer('box_132')->nullable();
+            $table->integer('box_133')->nullable();
+            $table->integer('box_134')->nullable();
+            $table->integer('box_135')->nullable();
+            $table->integer('box_136')->nullable();
+            $table->integer('box_141')->nullable();
+            $table->integer('box_142')->nullable();
+            $table->integer('box_143')->nullable();
+            $table->integer('box_144')->nullable();
+            $table->integer('box_145')->nullable();
+            $table->integer('box_146')->nullable();
+            $table->integer('box_151')->nullable();
+            $table->integer('box_152')->nullable();
+            $table->integer('box_153')->nullable();
+            $table->integer('box_154')->nullable();
+            $table->integer('box_155')->nullable();
+            $table->integer('box_156')->nullable();
+            $table->integer('box_161')->nullable();
+            $table->integer('box_162')->nullable();
+            $table->integer('box_163')->nullable();
+            $table->integer('box_164')->nullable();
+            $table->integer('box_165')->nullable();
+            $table->integer('box_166')->nullable();
+            $table->integer('box_171')->nullable();
+            $table->integer('box_172')->nullable();
+            $table->integer('box_173')->nullable();
+            $table->integer('box_174')->nullable();
+            $table->integer('box_175')->nullable();
+            $table->integer('box_176')->nullable();
+            $table->integer('box_181')->nullable();
+            $table->integer('box_182')->nullable();
+            $table->integer('box_183')->nullable();
+            $table->integer('box_184')->nullable();
+            $table->integer('box_185')->nullable();
+            $table->integer('box_186')->nullable();
+            $table->integer('box_191')->nullable();
+            $table->integer('box_192')->nullable();
+            $table->integer('box_193')->nullable();
+            $table->integer('box_194')->nullable();
+            $table->integer('box_195')->nullable();
+            $table->integer('box_196')->nullable();
+            $table->integer('box_201')->nullable();
+            $table->integer('box_202')->nullable();
+            $table->integer('box_203')->nullable();
+            $table->integer('box_204')->nullable();
+            $table->integer('box_205')->nullable();
+            $table->integer('box_206')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('useranswer');
+    }
+};

@@ -1,0 +1,560 @@
+<table class="table table-borderless table-responsive table-sm fw-bold " style="font-size: 12px">
+    <thead>
+        <tr class="text-black">
+            <th colspan="16" scope="col">1</th>
+
+            <th style="border: 1px solid black ;text-align: center;" scope="col">W</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody style="border-bottom: 1px solid black">
+        <tr>
+            <td>P</td>
+            <td>R</td>
+            <td>S</td>
+            <td>I</td>
+            <td>N</td>
+
+            <td>E</td>
+            <td>C</td>
+            <td>T</td>
+            <td>R</td>
+            <td>I</td>
+
+            <td>O</td>
+            <td>H</td>
+            <td>C</td>
+            <td>E</td>
+            <td>E</td>
+
+            <td>X</td>
+            <td>N</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>C</td>
+            <td>X</td>
+            <td>J</td>
+
+            <td>A</td>
+            <td>Z</td>
+            <td>C</td>
+            <td>N</td>
+            <td>F</td>
+
+            <td>B</td>
+            <td>R</td>
+            <td>G</td>
+            <td>Q</td>
+            <td>Z</td>
+
+            <td>G</td>
+            <td>Q</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>Z</td>
+            <td>L</td>
+            <td>U</td>
+            <td>S</td>
+
+            <td>Q</td>
+            <td>F</td>
+            <td>Z</td>
+            <td>M</td>
+            <td>B</td>
+
+            <td>S</td>
+            <td>M</td>
+            <td>J</td>
+            <td>T</td>
+            <td>E</td>
+
+            <td>L</td>
+            <td>L</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>U</td>
+            <td>I</td>
+            <td>W</td>
+            <td>D</td>
+            <td>X</td>
+
+            <td>F</td>
+            <td>N</td>
+            <td>K</td>
+            <td>R</td>
+            <td>Q</td>
+
+            <td>H</td>
+            <td>G</td>
+            <td>M</td>
+            <td>T</td>
+            <td>M</td>
+
+            <td>A</td>
+            <td>S</td>
+            <td>S</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr class="text-black">
+            <th colspan="16" scope="col">2</th>
+
+            <th style="border: 1px solid black ;text-align: center;" scope="col">J</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody style="border-bottom: 1px solid black">
+        <tr>
+            <td>D</td>
+            <td>J</td>
+            <td>J</td>
+            <td>U</td>
+            <td>F</td>
+            <td>K</td>
+            <td>M</td>
+            <td>C</td>
+            <td>X</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>E</td>
+            <td>O</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>D</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>X</td>
+            <td>O</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>Z</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>Y</td>
+            <td>J</td>
+            <td>T</td>
+            <td>K</td>
+            <td>J</td>
+            <td>J</td>
+            <td>D</td>
+            <td>U</td>
+            <td>P</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>L</td>
+            <td>H</td>
+            <td>T</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>S</td>
+            <td>C</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>G</td>
+            <td>J</td>
+            <td>E</td>
+            <td>D</td>
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+            <td>B</td>
+            <td>N</td>
+            <td>S</td>
+            <td>H</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr class="text-black">
+            <th colspan="16" scope="col">3</th>
+
+            <th style="border: 1px solid black ;text-align: center;" scope="col">W</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody style="border-bottom: 1px solid black">
+        <tr>
+            <td>G</td>
+            <td>W</td>
+            <td>W</td>
+            <td>M</td>
+            <td>W</td>
+            <td>R</td>
+            <td>Z</td>
+            <td>X</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>B</td>
+            <td>W</td>
+            <td>M</td>
+            <td>F</td>
+            <td>O</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>O</td>
+            <td>W</td>
+            <td>X</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>Y</td>
+            <td>W</td>
+            <td>J</td>
+            <td>W</td>
+            <td>R</td>
+            <td>X</td>
+            <td>R</td>
+            <td>N</td>
+            <td>N</td>
+            <td>B</td>
+            <td>R</td>
+            <td>W</td>
+            <td>W</td>
+            <td>C</td>
+            <td>X</td>
+            <td>X</td>
+            <td>W</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>W</td>
+            <td>W</td>
+            <td>E</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>W</td>
+            <td>Q</td>
+            <td>W</td>
+            <td>W</td>
+            <td>T</td>
+            <td>W</td>
+            <td>O</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr class="text-black">
+            <th colspan="16" scope="col">4</th>
+
+            <th style="border: 1px solid black ;text-align: center;" scope="col">Z</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody style="border-bottom: 1px solid black">
+        <tr>
+            <td>X</td>
+            <td>L</td>
+            <td>T</td>
+            <td>R</td>
+            <td>Y</td>
+            <td>Q</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>O</td>
+            <td>B</td>
+            <td>D</td>
+            <td>D</td>
+            <td>D</td>
+            <td>D</td>
+            <td>D</td>
+            <td>D</td>
+            <td>D</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>O</td>
+            <td>Z</td>
+            <td>V</td>
+            <td>H</td>
+            <td>B</td>
+            <td>S</td>
+            <td>P</td>
+            <td>O</td>
+            <td>R</td>
+            <td>Q</td>
+            <td>Z</td>
+            <td>Y</td>
+            <td>Z</td>
+            <td>F</td>
+            <td>Y</td>
+            <td>Z</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>S</td>
+            <td>P</td>
+            <td>Z</td>
+            <td>R</td>
+            <td>L</td>
+            <td>K</td>
+            <td>E</td>
+            <td>R</td>
+            <td>T</td>
+            <td>I</td>
+            <td>H</td>
+            <td>D</td>
+            <td>D</td>
+            <td>P</td>
+            <td>Z</td>
+            <td>L</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>U</td>
+            <td>S</td>
+            <td>B</td>
+            <td>N</td>
+            <td>Z</td>
+            <td>U</td>
+            <td>Z</td>
+            <td>N</td>
+            <td>K</td>
+            <td>D</td>
+            <td>S</td>
+            <td>H</td>
+            <td>Z</td>
+            <td>Z</td>
+            <td>P</td>
+            <td>Z</td>
+            <td>V</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr class="text-black">
+            <th scope="col" colspan="16">5</th>
+
+            <th style="border: 1px solid black ;text-align: center;" scope="col">O</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody style="border-bottom: 1px solid black">
+        <tr>
+            <td>E</td>
+            <td>O</td>
+            <td>L</td>
+            <td>O</td>
+            <td>X</td>
+            <td>Y</td>
+            <td>U</td>
+            <td>R</td>
+            <td>S</td>
+            <td>Y</td>
+            <td>K</td>
+            <td>A</td>
+            <td>G</td>
+            <td>V</td>
+            <td>E</td>
+            <td>U</td>
+            <td>L</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>M</td>
+            <td>V</td>
+            <td>O</td>
+            <td>K</td>
+            <td>B</td>
+            <td>K</td>
+            <td>M</td>
+            <td>O</td>
+            <td>P</td>
+            <td>L</td>
+            <td>U</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>V</td>
+            <td>O</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>X</td>
+            <td>F</td>
+            <td>O</td>
+            <td>L</td>
+            <td>C</td>
+            <td>Z</td>
+            <td>P</td>
+            <td>Y</td>
+            <td>H</td>
+            <td>C</td>
+            <td>F</td>
+            <td>O</td>
+            <td>U</td>
+            <td>R</td>
+            <td>R</td>
+            <td>O</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>E</td>
+            <td>X</td>
+            <td>U</td>
+            <td>I</td>
+            <td>X</td>
+            <td>I</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>G</td>
+            <td>E</td>
+            <td>V</td>
+            <td>E</td>
+            <td>X</td>
+            <td>K</td>
+            <td>I</td>
+            <td>S</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr class="text-black">
+            <th scope="col" colspan="16">6</th>
+
+            <th style="border: 1px solid black ;text-align: center;" scope="col">U</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody style="border-bottom: 1px solid black">
+        <tr>
+            <td>R</td>
+            <td>Z</td>
+            <td>K</td>
+            <td>O</td>
+            <td>Z</td>
+            <td>F</td>
+            <td>Z</td>
+            <td>E</td>
+            <td>Z</td>
+            <td>D</td>
+            <td>J</td>
+            <td>M</td>
+            <td>L</td>
+            <td>X</td>
+            <td>A</td>
+            <td>M</td>
+            <td>E</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>R</td>
+            <td>D</td>
+            <td>R</td>
+            <td>G</td>
+            <td>N</td>
+            <td>D</td>
+            <td>R</td>
+            <td>L</td>
+            <td>R</td>
+            <td>J</td>
+            <td>C</td>
+            <td>S</td>
+            <td>X</td>
+            <td>Z</td>
+            <td>V</td>
+            <td>H</td>
+            <td>Z</td>
+        </tr>
+        <tr>
+            <td>Q</td>
+            <td>S</td>
+            <td>R</td>
+            <td>F</td>
+            <td>D</td>
+            <td>N</td>
+            <td>T</td>
+            <td>J</td>
+            <td>N</td>
+            <td>Q</td>
+            <td>A</td>
+            <td>G</td>
+            <td>K</td>
+            <td>Y</td>
+            <td>X</td>
+            <td>S</td>
+            <td>F</td>
+            <td>U</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>H</td>
+            <td>H</td>
+            <td>T</td>
+            <td>F</td>
+            <td>N</td>
+            <td>W</td>
+            <td>S</td>
+            <td>D</td>
+            <td>L</td>
+            <td>X</td>
+            <td>U</td>
+            <td>M</td>
+            <td>U</td>
+            <td>G</td>
+            <td>Y</td>
+            <td>Z</td>
+            <td>K</td>
+        </tr>
+    </tbody>
+
+</table>
