@@ -1,19 +1,11 @@
 @extends('layouts.app')
 @section("title","General Information")
-@push('vendor-css')
-
-@endpush
 @push('page-css')
     <style>
-
         .main_card {
-            /* border: 2px solid #6f6f6f65; */
             margin: 20px 10px;
             height: 90vh;
             width: 100%;
-
-            /* background-color: #fff; */
-
         }
 
         .pre_btn {
@@ -41,9 +33,7 @@
         .cm_btn {
             position: absolute;
             bottom: 15px;
-
             width: 95%;
-            /* justify-content: space-between; */
         }
 
         table {
@@ -66,8 +56,6 @@
             margin-right: 10%;
         }
 
-
-
         .cm_row {
             display: grid;
             grid-template-columns: 3fr 6fr 3fr;
@@ -75,13 +63,9 @@
 
         @media only screen and (max-width: 1030px) {
             .main_card {
-                /* border: 2px solid #6f6f6f65; */
                 margin: 5px 5px;
                 height: 90vh !important;
                 width: 100%;
-
-                /* background-color: #fff; */
-
             }
 
             .cm_row {
@@ -98,8 +82,6 @@
                 position: absolute;
                 bottom: 15px;
                 width: 100%;
-
-                /* justify-content: space-between; */
             }
 
             .pre_btn {
@@ -113,14 +95,10 @@
         }
 
         .number_radio input[type="radio"] {
-            /* Add if not using autoprefixer */
             -webkit-appearance: none;
             appearance: none;
-            /* For iOS < 15 to remove gradient background */
             background-color: #d23d3d;
-            /* Not removed via appearance */
             margin: 0;
-
         }
 
         .number_radio input[type="radio"]:checked + label {
@@ -132,7 +110,6 @@
         .number_radio label {
             padding-bottom: 2px;
             width: 25px;
-
             height: 25px;
             text-align: center;
             border: 1px solid black;
@@ -160,11 +137,7 @@
                                 <input type="hidden" name="question_part" value="K">
                                 <div class="question">
                                     <p><strong>PART K: Please respond to the following questions.</strong></p>
-
-
-                                    <p>To what extent do you think sharing your shortcut details will help colleagues with very low ranks to avoid penalties?
-                                    </p>
-
+                                    <p>To what extent do you think sharing your shortcut details will help colleagues with very low ranks to avoid penalties?</p>
                                     <div class="number_radio d-flex justify-content-between">
                                             <span><input type="radio" id="soft_one" name="question_one" value="1">
                                                 <label for="soft_one">1</label></span>
@@ -181,14 +154,12 @@
                                         <span><input type="radio" id="soft_seven" name="question_one" value="7">
                                                 <label for="soft_seven">7</label></span>
                                     </div>
-
                                     <div class="d-flex justify-content-between">
                                         <div class="col-md-3 me-1">(Not at all)</div>
                                         <div class="col-md-2"></div>
                                         <div class="col-md-3 me-4">(To a moderate extent)</div>
                                         <div class="col-md-4 text-center ps-4">(To a great extent)</div>
                                     </div>
-
                                 </div>
                                 <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
                                     <button id="nextButton" disabled style="padding: 5px 20px 5px 20px;" type="submit"
@@ -203,13 +174,9 @@
         </div>
     </div>
 @endsection
-
-@push('vendor-js')
-
-@endpush
 @push('page-js')
     <script>
-        // Disable next button untill all questions are not answered
+        // Disable next button until all questions are not answered
         const container = document.querySelector('.question');
         const nextButton = document.getElementById('nextButton');
         const radioSets = container.querySelectorAll('input[type="radio"]');
@@ -228,7 +195,6 @@
             }
             return true;
         }
-
     </script>
 @endpush
 

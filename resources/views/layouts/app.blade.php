@@ -89,27 +89,27 @@
             }
         }
 
-        $(window).resize(function () {
-            deviceInfoValidation()
-        });
-
-        function deviceInfoValidation() {
-            let body = $('body'),
-                storedH = height - body.height(),
-                storedW = width - body.width();
-            if (storedH > 10 || storedH < -10 || storedW > 10 || storedW < -10) {
-                $('.unsupported').show()
-            } else {
-                $('.unsupported').hide()
-            }
-        }
-
-        if (window.history && window.history.pushState) {
-            window.history.pushState(disableBack());
-        }
-        function disableBack() {
-            window.history.forward();
-        }
+        // $(window).resize(function () {
+        //     deviceInfoValidation()
+        // });
+        //
+        // function deviceInfoValidation() {
+        //     let body = $('body'),
+        //         storedH = height - body.height(),
+        //         storedW = width - body.width();
+        //     if (storedH > 10 || storedH < -10 || storedW > 10 || storedW < -10) {
+        //         $('.unsupported').show()
+        //     } else {
+        //         $('.unsupported').hide()
+        //     }
+        // }
+        //
+        // if (window.history && window.history.pushState) {
+        //     window.history.pushState(disableBack());
+        // }
+        // function disableBack() {
+        //     window.history.forward();
+        // }
     });
 </script>
 </body>
