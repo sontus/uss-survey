@@ -75,10 +75,16 @@ class ReportController extends Controller
                 // 'post_experimental_part_f_s.question_three as q_f_3',
 
                 'post_experimental_part_g_s.question_one as q_g_1',
+                'post_experimental_part_g_s.question_two as q_g_2',
+                'post_experimental_part_g_s.question_three as q_g_3',
                 'post_experimental_part_h_s.question_set as question_set_number',
                 'post_experimental_part_h_s.question_one as q_h_1',
                 'post_experimental_part_i_s.question_one as q_i_1',
+                'post_experimental_part_i_s.question_two as q_i_2',
+                'post_experimental_part_i_s.question_three as q_i_3',
                 'post_experimental_part_j_s.question_one as q_j_1',
+                'post_experimental_part_j_s.question_two as q_j_2',
+                'post_experimental_part_j_s.question_three as q_j_3',
                 'post_experimental_part_k_s.question_one as q_k_1',
                 'post_experimental_part_l_s.question_one as q_l_1',
 
@@ -165,5 +171,10 @@ class ReportController extends Controller
         ]);
 
         return redirect()->back();
+    }
+    function ShortCutView()
+    {
+        $data = ShortcutsDiscovered::all();
+        return view('shortcut_report_view',compact('data'));
     }
 }

@@ -166,9 +166,23 @@ class HomeControllerThree extends Controller
     public function page_fifty_save(Request $request)
     {
         $next_page = $request->next_page;
+        $user_id = Session::get('prolific_pid');
+
         Session::put('part_f_one', $request->question_one);
         Session::put('part_f_two', $request->question_two);
         Session::put('part_f_three', $request->question_three);
+
+        $data = PostExperimentalPartF::insert([
+            'user_id' => $user_id,
+            'question_one' => $request->question_one,
+            'question_two' => $request->question_two,
+            'question_three' => $request->question_three,
+            'question_four' => $request->question_four,
+            'question_five' => $request->question_five,
+            'question_six' => $request->question_six,
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
 
         return redirect()->route($next_page);
     }
@@ -222,6 +236,8 @@ class HomeControllerThree extends Controller
         $data = PostExperimentalPartG::insert([
             'user_id' => $user_id,
             'question_one' => $request->question_one,
+            'question_two' => $request->question_two,
+            'question_three' => $request->question_three,
             'question_set' => checkversion(),
             'created_at' => now(),
             'updated_at' => now()
@@ -288,6 +304,8 @@ class HomeControllerThree extends Controller
         $data = PostExperimentalPartI::insert([
             'user_id' => $user_id,
             'question_one' => $request->question_one,
+            'question_two' => $request->question_two,
+            'question_three' => $request->question_three,
             'question_set' => checkversion(),
             'created_at' => now(),
             'updated_at' => now()
@@ -310,6 +328,8 @@ class HomeControllerThree extends Controller
         $data = PostExperimentalPartJ::insert([
             'user_id' => $user_id,
             'question_one' => $request->question_one,
+            'question_two' => $request->question_two,
+            'question_three' => $request->question_three,
             'question_set' => checkversion(),
             'created_at' => now(),
             'updated_at' => now()

@@ -149,53 +149,29 @@
                     <div class="card w-100 h-100">
                         <div class="card-body">
                             <div class="title text-center w-100 mt-5 mb-4">
-                                <h5>Post experimental questionnaire</h5>
+                                <h5>Introduction to PHASE 2</h5>
                             </div>
                             <br>
-                            <form action="{{ route('page-fifty-seven-save')}}" method="POST">
-                                @csrf
-                                <input type="hidden" name="next_page" value="page-fifty-eight">
-                                <input type="hidden" name="current_page" value="57">
+                                {{-- <input type="hidden" name="next_page" value="page-fifty-one"> --}}
+                                <input type="hidden" name="next_page" value="page-fifty-two">
+                                <input type="hidden" name="current_page" value="27">
                                 <input type="hidden" name="question_set" value="All">
-                                <input type="hidden" name="question_part" value="K">
                                 <div class="question">
-                                    <p><strong>PART K: Please respond to the following questions.</strong></p>
-
-
-                                    <p>To what extent do you think sharing your shortcut details will help colleagues with very low ranks to avoid penalties?
+                                    <p>
+                                        You are about the start the second phase of this experiment. In this phase, you will read additional information about your work
+                                        environment and compensation structure at Festina. Once you finish reading, you will be required answer a few questions.
+                                    </p>
+                                    <p class="mt-5">
+                                        Click on the ‘Next’ button to continue.
                                     </p>
 
-                                    <div class="number_radio d-flex justify-content-between">
-                                            <span><input type="radio" id="soft_one" name="question_one" value="1">
-                                                <label for="soft_one">1</label></span>
-                                        <span><input type="radio" id="soft_two" name="question_one" value="2">
-                                                <label for="soft_two">2</label></span>
-                                        <span><input type="radio" id="soft_three" name="question_one" value="3">
-                                                <label for="soft_three">3</label></span>
-                                        <span><input type="radio" id="soft_four" name="question_one" value="4">
-                                                <label for="soft_four">4</label></span>
-                                        <span><input type="radio" id="soft_five" name="question_one" value="5">
-                                                <label for="soft_five">5</label></span>
-                                        <span><input type="radio" id="soft_six" name="question_one" value="6">
-                                                <label for="soft_six">6</label></span>
-                                        <span><input type="radio" id="soft_seven" name="question_one" value="7">
-                                                <label for="soft_seven">7</label></span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">(Not at all)</div>
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">(To a moderate extent)</div>
-                                        <div class="col-md-4 text-center ps-4">(To a great extent)</div>
-                                    </div>
-
                                 </div>
-                                <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
-                                    <button id="nextButton" disabled style="padding: 5px 20px 5px 20px;" type="submit"
-                                            class="btn btn-danger next_btn btn-sm">Next
-                                    </button>
-                                </div>
-                            </form>
+                            <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
+
+                                {{-- <a href="{{ route('your-role-in-organisation')}}"  style="padding: 5px 20px 5px 20px;" type="button" class="btn btn-danger next_btn btn-sm">Next</a> --}}
+                                <a href="{{ route('work-environment')}}" style="padding: 5px 20px 5px 20px;"
+                                   type="button" class="btn btn-danger next_btn btn-sm">Next</a>
+                            </div>
                         </div>
                     </div>
                 </div>

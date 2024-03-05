@@ -99,15 +99,13 @@
                     <div class="card w-100 h-100">
                         <div class="card-body">
                             <div class="title text-center w-100 mt-5 mb-4">
-                                <h5>Introduction to <span class="upp">Phase 2</span> </h5>
+                                <h5>Introduction to PHASE 2</h5>
                             </div>
                             <br>
                             <div class="question">
-                                <p>You are about the start the second phase of this experiment. In this phase, you will
-                                    read additional information about your work environment and compensation structure
-                                    at Festina. Once you finish reading, you will be required answer a few
-                                    questions.</p>
-                                <p>Click ‘NEXT’ button to continue.</p>
+                                <p> You are about the start the second phase of this experiment. In this phase, you will read additional information about your work
+                                    environment and compensation structure at Festina. Once you finish reading, you will be required answer a few questions.</p>
+                                <p class="mt-3">Click ‘NEXT’ button to continue.</p>
                             </div>
                             <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
 

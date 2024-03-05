@@ -39,26 +39,26 @@
                                                 <table cellspacing="0" border="0" class="table table-responsive table-bordered">
                                                     <colgroup span="20" width="64"></colgroup>
                                                     <tr>
-                                                        <td colspan=9 height="20" align="center">Question Set: {{checkversion() }}</td>
+                                                        <td colspan=11 height="20" align="center">Question Set: {{checkversion() }}</td>
                                                         <td
                                                         @if(checkversion() == "B" || checkversion() == "D")
-                                                        colspan=11
+                                                        colspan=13
                                                         @else
-                                                        colspan=10
+                                                        colspan=12
                                                         @endif
                                                         align="center">User ID: {{  $item->user}}</td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan=2 height="20" align="center">PEQ_Part_A</td>
                                                         <td colspan=2 align="center">PEQ_Part_B</td>
-                                                        <td colspan=2 align="center">PEQ_Part_C</td>
-                                                        <td align="left">PEQ_Part_D</td>
+                                                        <td align="left">PEQ_Part_C</td>
+                                                        <td colspan=2 align="center">PEQ_Part_D</td>
                                                         <td colspan=2 align="center">PEQ_Part_E</td>
                                                         {{-- <td colspan=2 align="center">PEQ_Part_F reomve</td> --}}
-                                                        <td align="left">PEQ_Part_G</td>
+                                                        <td colspan=2 align="center">PEQ_Part_G</td>
                                                         <td align="left">PEQ_Part_H</td>
-                                                        <td align="left">PEQ_Part_I</td>
-                                                        <td align="left">PEQ_Part_J</td>
+                                                        <td colspan=2 align="center">PEQ_Part_I</td>
+                                                        <td colspan=2 align="center">PEQ_Part_J</td>
                                                         @if(checkversion() == "B" || checkversion() == "D")
                                                         <td  align="left">PEQ_Part_K</td>
                                                         @endif
@@ -71,17 +71,21 @@
                                                         <td align="left">Answer</td>
                                                         <td align="left">Question</td>
                                                         <td align="left">Answer </td>
+                                                        <td rowspan=7 align="center">{{ $item->q_d_1}}</td>
                                                         <td align="left">Question</td>
                                                         <td align="left">Answer</td>
-                                                        <td rowspan=7 align="center">{{ $item->q_d_1}}</td>
                                                         <td align="left">Question </td>
                                                         <td align="left">Answer </td>
                                                         {{-- <td align="left">Question reomve</td>
                                                         <td align="left">Answer reomve</td> --}}
-                                                        <td rowspan=7 align="center">{{ $item->q_g_1}}</td>
+                                                        <td align="left">Question</td>
+                                                        <td align="left">Answer</td>
                                                         <td rowspan=7 align="center">{{ $item->q_h_1}}</td>
-                                                        <td rowspan=7 align="center">{{ $item->q_i_1}}</td>
-                                                        <td rowspan=7 align="center">{{ $item->q_j_1}}</td>
+{{--                                                        <td rowspan=7 align="center">{{ $item->q_i_1}}</td>--}}
+                                                        <td align="left">Question</td>
+                                                        <td align="left">Answer</td>
+                                                        <td align="left">Question</td>
+                                                        <td align="left">Answer</td>
                                                         @if(checkversion() == "B" || checkversion() == "D")
                                                         <td rowspan=7 align="center">{{ $item->q_k_1}}</td>
                                                         @endif
@@ -100,6 +104,12 @@
                                                         <td>{{ $item->q_c_1}}</td>
                                                         <td>1</td>
                                                         <td>{{ $item->q_e_1}}</td>
+                                                        <td>1</td>
+                                                        <td>{{ $item->q_g_1}}</td>
+                                                        <td>1</td>
+                                                        <td>{{ $item->q_i_1}}</td>
+                                                        <td>1</td>
+                                                        <td>{{ $item->q_j_1}}</td>
                                                         {{-- <td>1 reomve</td>
                                                         <td>{{ $item->q_f_1}} reomve</td> --}}
                                                         <td>1</td>
@@ -121,6 +131,12 @@
                                                         <td>{{ $item->q_c_2}}</td>
                                                         <td>2</td>
                                                         <td>{{ $item->q_e_2}}</td>
+                                                        <td>2</td>
+                                                        <td>{{ $item->q_g_2}}</td>
+                                                        <td>2</td>
+                                                        <td>{{ $item->q_i_2}}</td>
+                                                        <td>2</td>
+                                                        <td>{{ $item->q_j_2}}</td>
                                                         {{-- <td>2 reomve</td>
                                                         <td>{{ $item->q_f_2}} reomve</td> --}}
                                                         <td>2</td>
@@ -142,6 +158,12 @@
                                                         <td>{{ $item->q_c_3}}</td>
                                                         <td>3</td>
                                                         <td>{{ $item->q_e_3}}</td>
+                                                        <td>3</td>
+                                                        <td>{{ $item->q_g_3}}</td>
+                                                        <td>3</td>
+                                                        <td>{{ $item->q_i_3}}</td>
+                                                        <td>3</td>
+                                                        <td>{{ $item->q_j_3}}</td>
                                                         {{-- <td>3 reomve</td>
                                                         <td>{{ $item->q_f_3}} reomve</td> --}}
                                                         <td>3</td>
@@ -157,6 +179,12 @@
                                                             <td height="20" align="left"><br></td>
                                                             <td align="left"><br></td>
                                                         @endif
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
                                                         <td align="left"><br></td>
                                                         <td align="left"><br></td>
                                                         <td align="left"><br></td>
@@ -184,6 +212,12 @@
                                                         <td align="left"><br></td>
                                                         <td align="left"><br></td>
                                                         <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
                                                         {{-- <td align="left"><br>reomve</td>
                                                         <td align="left"><br>reomve</td> --}}
                                                         <td>5</td>
@@ -200,6 +234,12 @@
                                                         <td align="left"><br></td>
                                                         <td align="left"><br></td>
                                                         <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
+                                                        <td align="left"><br></td>
                                                         {{-- <td align="left"><br>reomve</td>
                                                         <td align="left"><br>reomve</td> --}}
                                                         <td>6</td>
@@ -208,12 +248,12 @@
                                                         <td>{{ $item->experience_year}}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan=9 height="20" align="center">Work Environments</td>
+                                                        <td colspan=11 height="20" align="center">Work Environments</td>
                                                         <td
                                                         @if(checkversion() == "B" || checkversion() == "D")
-                                                        colspan=11
+                                                        colspan=13
                                                         @else
-                                                        colspan=10
+                                                        colspan=12
                                                         @endif
                                                         align="center">{{  $item->teammate}}</td>
                                                     </tr>

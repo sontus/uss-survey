@@ -74,6 +74,10 @@
                                 <td>PEQ Report</td>
                                 <td> <a href="{{ route('peq-report')}}">View</a> </td>
                             </tr>
+                            <tr>
+                                <td>Describe the shortcuts</td>
+                                <td> <a href="{{ route('shortcut.report') }}">View</a> </td>
+                            </tr>
                         </tbody>
                     </table>
                     {{-- <a class="btn btn-warning float-end" href="{{ route('report-export') }}">Export Survery Report</a> --}}

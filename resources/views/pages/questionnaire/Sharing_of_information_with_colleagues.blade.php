@@ -118,18 +118,12 @@
                                 {{-- <p>However, before your colleagues can benefit from the shortcuts you have discovered, you need to let them view the work you have done. You can do this by allowing them to view the answer sheets you have completed in your most recently completed production period. </p>
                                 <p>For example, if you have discovered a shortcut in production period TWO to complete answers for a particular box, to allow your colleagues to learn it from you, you will have to share your answer sheets for that shortcut at the end of the period TWO. </p>
                                 <p>If you do so, they may use this answer sheet in production period THREE to learn the shortcut applicable for their task. Once learned, they can use this knowledge to complete answers for that box in period THREE and FOUR. That way, they will be able to do their tasks efficiently and hence improve their performance. </p> --}}
-                                <p>In this task, if you discover a shortcut in production period TWO to complete answers
-                                    for a particular box, you may share the shortcut you have found with your colleagues
-                                    in the coding team at the end of production period TWO. If you do so, they may use
-                                    this information to learn the unique shortcut applicable for their clients in period
-                                    THREE. Once learned, they can use this knowledge to complete answers for that box in
-                                    period THREE and FOUR. That way, they will be able to do their tasks efficiently and
-                                    hence improve their performance.</p>
+
 
                             </div>
                             <div class="cm_btn d-grid gap-2 d-md-flex justify-content-md-end ">
 
-                                <a href="{{ route('sharing-of-information-with-colleagues-Understandability-Questionnaire') }}"
+                                <a href="{{ route('sharing-of-knowledge-with-colleagues') }}"
                                    style="padding: 5px 20px 5px 20px;" type="button"
                                    class="btn btn-danger next_btn btn-sm">Next</a>
                             </div>

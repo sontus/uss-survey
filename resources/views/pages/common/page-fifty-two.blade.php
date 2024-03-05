@@ -169,7 +169,7 @@
                                 <input type="hidden" name="question_part" value="G">
                                 <div class="question">
                                     <p><strong>PART G: Please respond to the following questions.</strong></p>
-                                    <p>(1) To what extent do you feel competitive about the colleague who is ranked #2?
+                                    <p>(1) To what extent do you feel competitive about the colleague who is <b>ranked #2?</b>
                                     </p>
 
                                     <div class="number_radio d-flex justify-content-between">
@@ -196,7 +196,7 @@
                                         <div class="col-md-4 text-center ps-4">(To a great extent)</div>
                                     </div>
 
-                                    <p class="mt-5">(2) To what extent do you feel competitive about the colleague who is ranked #4?
+                                    <p class="mt-5">(2) To what extent do you feel competitive about the colleague who is <b>ranked #4?</b>
                                     </p>
 
                                     <div class="number_radio d-flex justify-content-between">
@@ -224,7 +224,7 @@
                                     </div>
 
 
-                                    <p class="mt-5">(3) To what extent do you feel competitive about the colleague who is ranked #5?
+                                    <p class="mt-5">(3) To what extent do you feel competitive about the colleague who is <b>ranked #5?</b>
                                     </p>
 
                                     <div class="number_radio d-flex justify-content-between">

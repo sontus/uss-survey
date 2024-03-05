@@ -96,23 +96,23 @@
                             </div>
                             <br>
                             <div class="question">
-                                <p class="mb-4">At Festina, the coding team uses a software called Zempra to perform their tasks. The current version of Zempra (version 1) <span class="text-danger">had</span> no
-                                    option to allow sharing of shortcut details between coding team members.</p>
-                                {{-- <br> --}}
-                                {{-- <p>Out of the 5 members in Festina’s coding team, you are currently ranked at <strong>#1</strong> based on your performance in the task. There are six shortcuts to be discovered in your task and you have already identified four of them. </p> --}}
-                                <p class="mb-4">Management at Festina believes that by sharing shortcut details with each other, coding team members can help each other improve their work skills and become more productive. This is because shortcuts enable the coding team members to complete their tasks faster. This increase in productivity at the individual employee level will ultimately improve Festina’s overall performance.
-                                </p>
-                                <p>Festina's management has decided to adopt an upgraded version of Zempra software (version 2), which has a new feature that allows sharing of shortcut details between coding team members. By enabling this feature, one member can share the details of their identified shortcuts with other members. All Festina employees now use this upgraded software.
-                                </p>
-                                {{-- <br> --}}
-                                {{-- <p>There are six shortcuts to be discovered in your task and you have already identified four of them.</p> --}}
-                                <p class="mb-4">Using this new feature if you share shortcuts, the details of your shared shortcuts can <b>be viewed by all members of the coding team.</b> If you prefer not to share your shortcuts with any individual member of the coding team, you <b>cannot exclude</b> that member from receiving the details of your shared shortcuts.
-                                </p>
+                                <p>Now imagine the following:</p>
+                                <ul style="list-style-type:disc">
+                                    <li>
+                                        In the four production period task that you and your colleagues were working on, all members of the coding team have completed the first and second production periods.
+                                    </li>
+                                    <li>
+                                        Out of the 5 members in Festina’s coding team, you are currently ranked at <b>#1</b> based on your performance in the task. All coding team members know their own rank as well as the ranks of others.
+                                    </li>
+                                    <li>
+                                        Recall that there are six shortcuts to be discovered in your task. You have already identified four of them.
+                                    </li>
+                                </ul>
                             </div>
                             <div class="cm_btn d-flex justify-content-between ">
-                                <a href="{{ route('sharing-of-information-with-colleagues-Understandability-Questionnaire') }}"
+                                <a href="{{ route('options_to_share_information_with_colleagues_two') }}"
                                    type="button" class="btn pre_btn btn-danger btn-sm">Previous</a>
-                                <a href="{{ route('options_to_share_information_with_colleagues_three') }}"
+                                <a href="{{ route('sharing_of_information_with_colleaguesUnderstandability_Questionnaire2') }}"
                                    style="padding: 5px 20px 5px 20px;" type="button"
                                    class="btn next_btn btn-danger btn-sm">Next</a>
                             </div>

@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('user_id');
             $table->string('question_set')->nullable();
             $table->string('question_one')->nullable();
+            $table->string('question_two')->nullable();
+            $table->string('question_three')->nullable();
             $table->timestamps();
         });
     }

@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EndofPhashOne;
+use App\Models\PostExperimentalPartC;
 use App\Models\ProlificUser;
 use App\Models\ShortcutsDiscovered;
 use Carbon\Carbon;
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -23,24 +22,24 @@ class HomeController extends Controller
     public function index()
     {
 
-        $prolific_pid = request()->get('PROLIFIC_PID');
-        $study_id = request()->get('STUDY_ID');
-        $session_id = request()->get('SESSION_ID');
+        $prolific_pid   = request()->get('PROLIFIC_PID');
+        $study_id       = request()->get('STUDY_ID');
+        $session_id     = request()->get('SESSION_ID');
 
-        if (empty($prolific_pid) || empty($study_id) || empty($session_id)) {
+        if( empty($prolific_pid) || empty($study_id) || empty($session_id)) {
             return redirect()->route('out-from-prolific');
         }
 
-        Session::put('prolific_pid', $prolific_pid);
-        Session::put('study_id', $study_id);
-        Session::put('session_id', $session_id);
+        Session::put('prolific_pid',$prolific_pid);
+        Session::put('study_id',$study_id);
+        Session::put('session_id',$session_id);
 
         ProlificUser::insert([
-            'prolific_pid' => Session::get('prolific_pid'),
-            'study_id' => Session::get('study_id'),
-            'session_id' => Session::get('session_id'),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
+            'prolific_pid'  => Session::get('prolific_pid'),
+            'study_id'      => Session::get('study_id'),
+            'session_id'    => Session::get('session_id'),
+            'created_at'    => Carbon::now(),
+            'updated_at'    => Carbon::now()
         ]);
 
         return view('pages.index');
@@ -58,6 +57,7 @@ class HomeController extends Controller
         return view('pages.new-role-org');
 
 
+
     }
 
     /**
@@ -70,7 +70,6 @@ class HomeController extends Controller
     {
         return view('pages.introduction-to-phase-one');
     }
-
     /**
      * View Home Page
      * @endpoint http://survey.test/
@@ -82,7 +81,7 @@ class HomeController extends Controller
         return view('pages.task-one');
     }
 
-    /**
+     /**
      * View Home Page
      * @endpoint http://survey.test/
      * @method  GET
@@ -117,12 +116,12 @@ class HomeController extends Controller
 
     public function productionOne()
     {
-        return view('pages.production-one');
+       return view('pages.production-one');
     }
 
     public function productionTwo()
     {
-        return view('pages.production-two');
+       return view('pages.production-two');
     }
 
     /**
@@ -180,6 +179,7 @@ class HomeController extends Controller
     {
         return view('pages.task-understandability-questionnaire-five');
     }
+
 
 
     /**
@@ -248,10 +248,9 @@ class HomeController extends Controller
     public function viewMyAnswerSheets()
     {
         $user_id = Session::get('prolific_pid');
-        $result = DB::table('useranswer')->where([['period', 'Production-Period-1'], ['user_id', $user_id]])->first();
-        return view('pages.view-my-answer-sheets', compact('result'));
+        $result = DB::table('useranswer')->where([['period','Production-Period-1'],['user_id',$user_id]])->first();
+        return view('pages.view-my-answer-sheets',compact('result'));
     }
-
     /**
      * viewMyAnswerSheetsTwo
      * @endpoint http://survey.test/
@@ -261,8 +260,8 @@ class HomeController extends Controller
     public function viewMyAnswerSheetsTwo()
     {
         $user_id = Session::get('prolific_pid');
-        $result = DB::table('useranswer')->where([['period', 'Production-Period-2'], ['user_id', $user_id]])->first();
-        return view('pages.view-my-answer-sheets-two', compact('result'));
+        $result = DB::table('useranswer')->where([['period','Production-Period-2'],['user_id',$user_id]])->first();
+        return view('pages.view-my-answer-sheets-two',compact('result'));
     }
 
 
@@ -309,9 +308,9 @@ class HomeController extends Controller
     public function shortcutsDiscoveredInThisPeriodTwo()
     {
         $user_id = Session::get('prolific_pid');
-        $shortcuts = ShortcutsDiscovered::where('user_id', $user_id)->first();
+        $shortcuts = ShortcutsDiscovered::where('user_id',$user_id)->first();
         // dd($shortcuts);
-        return view('pages.shortcuts-discovered-in-this-period-two', compact('shortcuts'));
+        return view('pages.shortcuts-discovered-in-this-period-two',compact('shortcuts'));
     }
 
     /**
@@ -324,8 +323,7 @@ class HomeController extends Controller
     {
         return view('pages.production-period-two-result');
     }
-
-    /**
+     /**
      * introductionToPhaseTwo
      * @endpoint http://survey.test/
      * @method  GET
@@ -334,9 +332,8 @@ class HomeController extends Controller
     public function introductionToPhaseTwo(Request $request)
     {
         Session::put('productionTowCorrect', $request->productionTow);
-        return view('pages.introduction-to-phase-two');
+        return view('pages.common.page-twenty-six');
     }
-
     /**
      * yourRoleInOrganisation
      * @endpoint http://survey.test/
@@ -347,7 +344,6 @@ class HomeController extends Controller
     {
         return view('pages.your-role-in-organisation');
     }
-
     /**
      * organisationUnderstandability
      * @endpoint http://survey.test/
@@ -358,7 +354,6 @@ class HomeController extends Controller
     {
         return view('pages.organisation-understandability-questionnaire');
     }
-
     /**
      * workEnvironment
      * @endpoint http://survey.test/
@@ -369,7 +364,6 @@ class HomeController extends Controller
     {
         return view('pages.work-environment');
     }
-
     /**
      * workEnvironmentUnderstandabilityQuestionnaire
      * @endpoint http://survey.test/
@@ -392,7 +386,6 @@ class HomeController extends Controller
     {
         return view('pages.questionnaire.CompensationStructure');
     }
-
     /**
      * compensationQuestionnaire
      * @endpoint http://survey.test/
@@ -414,7 +407,6 @@ class HomeController extends Controller
     {
         return view('pages.questionnaire.CompensationStructureQuestionnaireTwo');
     }
-
     /**
      * compensationStructureTwo
      * @endpoint http://survey.test/
@@ -425,7 +417,6 @@ class HomeController extends Controller
     {
         return view('pages.questionnaire.CompensationStructure_two');
     }
-
     /**
      * compensationStructureTwo
      * @endpoint http://survey.test/
@@ -433,90 +424,96 @@ class HomeController extends Controller
      * @response index page
      */
 
-    public function workEnvironmentQuestionnaireThree()
-    {
+    public function workEnvironmentQuestionnaireThree(){
         return view('pages.questionnaire.WorkenvironmentQuestionnaire');
     }
-
     /**
      * compensationStructureTwo
      * @endpoint http://survey.test/
      * @method  GET
      * @response index page
      */
-    public function sharingInformColleagues()
-    {
+    public function sharingInformColleagues(){
         return view('pages.questionnaire.Sharing_of_information_with_colleagues');
     }
-
     /**
      * compensationStructureTwo
      * @endpoint http://survey.test/
      * @method  GET
      * @response index page
      */
-    public function sharingUnderstandabilityQ()
-    {
+    public function sharingUnderstandabilityQ(){
         return view('pages.questionnaire.Sharing_of_information_with_colleaguesUnderstandabilityQuestionnaire2');
     }
 
-    public function optionsToShareInformationWithColleagues()
-    {
+    public function optionsToShareInformationWithColleagues(){
         return view('pages.questionnaire.Options_to_share_information_with_colleagues-2');
     }
 
-    public function Sharing_of_information_Questionnaire_two()
-    {
+    public function Sharing_of_information_Questionnaire_two(){
         return view('pages.questionnaire.Sharing_of_information_colleaguesUnderstandabilityQuestionnaire2');
     }
 
-    public function SharingofolleaguesUnderstandabilityQuestionnaireFour()
-    {
+    public function SharingofolleaguesUnderstandabilityQuestionnaireFour(){
         return view('pages.questionnaire.Sharing_of_information_with_colleagues4');
     }
 
-    public function OptionstoshareinformationwithcolleaguesFour()
-    {
+    public function OptionstoshareinformationwithcolleaguesFour(){
         return view('pages.questionnaire.Options_to_share_information_with_colleagues');
     }
 
-    public function Sharingofinformationfive()
-    {
+    public function Sharingofinformationfive(){
         return view('pages.questionnaire.Sharing_of_information_colleaguesUnderstandabilityQuestionnaire3');
     }
 
-    public function Sharingofinformationsix()
-    {
+    public function Sharingofinformationsix(){
         return view('pages.questionnaire.Sharing_of_information_with_colleagues_six');
 
     }
-
-    public function PostexperimentalquestionnaireOne()
-    {
+    public function PostexperimentalquestionnaireOne(){
         return view('pages.questionnaire.Post_experimental_questionnaire');
     }
-
-    public function PostexperimentalquestionnaireTwo()
-    {
+    public function PostexperimentalquestionnaireTwo(){
         return view('pages.questionnaire.Postexperimental_questionnaire_2');
     }
-
-    public function PostexperimentalquestionnaireThree()
-    {
+    public function PostexperimentalquestionnaireThree(){
         return view('pages.questionnaire.Postexperimental_questionnaire_3');
     }
-
-    public function PostexperimentalquestionnaireFour()
-    {
+    public function PostexperimentalquestionnaireFour(){
         return view('pages.questionnaire.Post_experimental_4');
     }
 
+    public function optionsToShareInformationWithColleaguesThree()
+    {
+        return view('pages.questionnaire.Options_to_share_information_with_colleagues-3');
+    }
 
+    public function PageTwentySixSave(Request $request){
+        $user_id = Session::get('prolific_pid');
+        $next_page = $request->next_page;
+
+        $data = EndofPhashOne::insert([
+            'user_id' => $user_id,
+            'question_one' => $request->question_one,
+            'question_two' => $request->question_two,
+            'question_three' => $request->question_three,
+            'question_four' => $request->question_four,
+            'question_set' => $request->question_set,
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        return redirect()->route($next_page);
+    }
+    public function PageTwentySeven()
+    {
+        return view('pages.common.page-twenty-seven');
+    }
     /**
      * @return Application|Factory|View|\Illuminate\View\View
      */
     public function sharingOfKnowledgeWithColleagues()
     {
-        return view('pages.page-thirty-six');
+        return view('pages.common.page-thirty-six');
     }
 }

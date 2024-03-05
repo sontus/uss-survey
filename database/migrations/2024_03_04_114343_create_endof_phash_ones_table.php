@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('post_experimental_part_g_s', function (Blueprint $table) {
+        Schema::create('endof_phash_ones', function (Blueprint $table) {
             $table->id();
             $table->string('user_id');
             $table->string('question_set')->nullable();
             $table->string('question_one')->nullable();
             $table->string('question_two')->nullable();
             $table->string('question_three')->nullable();
+            $table->string('question_four')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post_experimental_part_g_s');
+        Schema::dropIfExists('endof_phash_ones');
     }
 };

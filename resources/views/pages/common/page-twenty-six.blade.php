@@ -149,22 +149,21 @@
                     <div class="card w-100 h-100">
                         <div class="card-body">
                             <div class="title text-center w-100 mt-5 mb-4">
-                                <h5>Post experimental questionnaire</h5>
+                                <h5>End of PHASE 1 questionnaire</h5>
                             </div>
                             <br>
-                            <form action="{{ route('page-forty-eight-save')}}" method="POST">
+                            <form action="{{ route('page-twenty-six-save')}}" method="POST">
                                 @csrf
-                                {{-- <input type="hidden" name="next_page" value="page-forty-nine"> --}}
-                                <input type="hidden" name="next_page" value="page-fifty">
-                                <input type="hidden" name="current_page" value="48">
+                                {{-- <input type="hidden" name="next_page" value="page-fifty-one"> --}}
+                                <input type="hidden" name="next_page" value="page-twenty-seven">
+                                <input type="hidden" name="current_page" value="26">
                                 <input type="hidden" name="question_set" value="All">
-                                <input type="hidden" name="question_part" value="E">
                                 <div class="question">
-                                    <p><strong>PART E: To help us better understand your decisions, please respond to
-                                            the following questions.</strong></p>
+                                    <p><strong>Reflecting on <u>the task</u> you just performed, please indicate the extent to which you agree with the following statements.
+                                        </strong></p>
 
-                                    <p>(1) To what extent do you feel <u>empathy</u> for those of your colleagues who
-                                        rank very low? </p>
+                                    {{-- <p>(1) To what extent did you feel <u>worried</u>  about those of your colleagues who rank very low? </p> --}}
+                                    <p>(1) Completing the task was difficult</p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                     <span><input type="radio" id="sympathetic_one" name="question_one" value="1">
@@ -184,16 +183,15 @@
 
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">Not at all</div>
+                                        <div class="col-md-3 me-1">(Strongly Disagree)</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">To a moderate extent</div>
-                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
+                                        <div class="col-md-3 me-4">(Neither Disagree nor Agree)</div>
+                                        <div class="col-md-4 text-center ps-4"> (Strongly Agree)</div>
                                     </div>
 
                                     {{-- 2nd --}}
-
-                                    <p class="mt-3">(2) To what extent do you feel <u>concerned</u> for those of your colleagues who
-                                        rank very low?</p>
+                                    {{-- <p>(2) To what extent did you feel <u>distressed</u> about those of your colleagues who rank very low?</p> --}}
+                                    <p class="mt-3">(2) I felt stressed while completing the task.</p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                         <span><input type="radio" id="compassionate_one" name="question_two" value="1">
@@ -215,17 +213,16 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">Not at all</div>
+                                        <div class="col-md-3 me-1">(Strongly Disagree)</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">To a moderate extent</div>
-                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
+                                        <div class="col-md-3 me-4">(Neither Disagree nor Agree)</div>
+                                        <div class="col-md-4 text-center ps-4"> (Strongly Agree)</div>
                                     </div>
 
                                     {{-- 3rd --}}
-                                    {{-- <p>(3) How <u>soft-hearted</u> do you feel toward those of your colleagues who rank very low?</p> --}}
-                                    <p class="mt-3">(3) To what extent do you feel <u>protective</u> toward those of your colleagues
-                                        who rank very low? </p>
-
+                                    {{-- <p>(3) To what extent did you feel <u>disturbed</u>  about those of your colleagues who rank very low?</p> --}}
+                                    <p class="mt-3"><strong>Reflecting specifically on <u>the shortcuts</u> you tried to find for this task, please indicate the extent to which you agree with the following statements.</strong></p>
+                                    <p class="mt-3">(1) Finding the shortcuts was difficult</p>
                                     <div class="number_radio d-flex justify-content-between">
                                         <span><input type="radio" id="soft_one" name="question_three" value="1">
                                             <label for="soft_one">1</label></span>
@@ -244,10 +241,35 @@
                                     </div>
 
                                     <div class="d-flex justify-content-between">
-                                        <div class="col-md-3 me-1">Not at all</div>
+                                        <div class="col-md-3 me-1">(Strongly Disagree)</div>
                                         <div class="col-md-2"></div>
-                                        <div class="col-md-3 me-4">To a moderate extent</div>
-                                        <div class="col-md-4 text-center ps-4">To a great extent</div>
+                                        <div class="col-md-3 me-4">(Neither Disagree nor Agree)</div>
+                                        <div class="col-md-4 text-center ps-4"> (Strongly Agree)</div>
+                                    </div>
+
+                                    <p class="mt-3">(2) I felt stressed while finding the shortcuts. </p>
+                                    <div class="number_radio d-flex justify-content-between">
+                                        <span><input type="radio" id="short_one" name="question_four" value="1">
+                                            <label for="short_one">1</label></span>
+                                        <span><input type="radio" id="short_two" name="question_four" value="2">
+                                            <label for="short_two">2</label></span>
+                                        <span><input type="radio" id="short_three" name="question_four" value="3">
+                                            <label for="short_three">3</label></span>
+                                        <span><input type="radio" id="short_four" name="question_four" value="4">
+                                            <label for="short_four">4</label></span>
+                                        <span><input type="radio" id="short_five" name="question_four" value="5">
+                                            <label for="short_five">5</label></span>
+                                        <span><input type="radio" id="short_six" name="question_four" value="6">
+                                            <label for="short_six">6</label></span>
+                                        <span><input type="radio" id="short_seven" name="question_four" value="7">
+                                            <label for="short_seven">7</label></span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-md-3 me-1">(Strongly Disagree)</div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-3 me-4">(Neither Disagree nor Agree)</div>
+                                        <div class="col-md-4 text-center ps-4"> (Strongly Agree)</div>
                                     </div>
 
                                 </div>

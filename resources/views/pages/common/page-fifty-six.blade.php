@@ -210,7 +210,7 @@
                                     <p><strong>PART J: Please respond to the following questions.</strong></p>
 
                                     <p>To what extent do you agree with the following statements</p>
-                                    <p>(1) I share shortcuts with my colleague ranked #2 because my colleague will also share shortcuts with me.</p>
+                                    <p>(1) I share shortcuts with my colleague <b>ranked #2</b> because my colleague will also share shortcuts with me.</p>
                                     <div class="number_radio d-flex justify-content-between">
                                         <div
                                             class="d-flex flex-column"> <span><input
@@ -250,7 +250,7 @@
                                                 <span>
                                                     <input type="radio" id="soft_eight" class="checkbox-ratio"
                                                            name="question_one"
-                                                           value="7">
+                                                           value="0">
                                                     <label class="checkbox-label" for="soft_eight">
                                                         <div><span class="checkmark-sign">&#10004;</span></div>
                                                         I did not share shortcuts
@@ -260,7 +260,7 @@
                                         </div>
                                     </div>
 
-                                    <p class="mt-3">(2) I share shortcuts with my colleague ranked #4 because my colleague will also share shortcuts with me.</p>
+                                    <p class="mt-3">(2) I share shortcuts with my colleague <b>ranked #4</b> because my colleague will also share shortcuts with me.</p>
                                     <div class="number_radio d-flex justify-content-between">
                                         <div
                                             class="d-flex flex-column"> <span><input
@@ -300,7 +300,7 @@
                                                 <span>
                                                     <input type="radio" id="soft_two_eight" class="checkbox-ratio"
                                                            name="question_two"
-                                                           value="7">
+                                                           value="0">
                                                     <label class="checkbox-label" for="soft_two_eight">
                                                         <div><span class="checkmark-sign">&#10004;</span></div>
                                                         I did not share shortcuts
@@ -309,7 +309,7 @@
                                                 </span>
                                         </div>
                                     </div>
-                                    <p class="mt-3">(3) I share shortcuts with my colleague ranked #5 because my colleague will also share shortcuts with me.</p>
+                                    <p class="mt-3">(3) I share shortcuts with my colleague <b>ranked #5</b> because my colleague will also share shortcuts with me.</p>
 
                                     <div class="number_radio d-flex justify-content-between">
                                         <div
@@ -350,7 +350,7 @@
                                                 <span>
                                                     <input type="radio" id="soft_three_eight" class="checkbox-ratio"
                                                            name="question_three"
-                                                           value="7">
+                                                           value="0">
                                                     <label class="checkbox-label" for="soft_three_eight">
                                                         <div><span class="checkmark-sign">&#10004;</span></div>
                                                         I did not share shortcuts

@@ -230,20 +230,20 @@
                                     <ul>
                                         <p><b><u>All</u> of your colleagues will view the details for the number of shortcuts that you select below.</b></p>
                                         <li><label><input type="radio" id="question_5" name="question_two"
-                                                          value="0 shortcut">&nbsp;&nbsp;0 shortcut</label></li>
+                                                          value="0">&nbsp;&nbsp;0 shortcut</label></li>
                                         <li><input type="radio" required id="question_two" name="question_two"
-                                                   value="1 shortcut"><label for="question_two">&nbsp;&nbsp;1
+                                                   value="1"><label for="question_two">&nbsp;&nbsp;1
                                                 shortcut </label>
                                         </li>
                                         <li><input type="radio" required id="question_two1" name="question_two"
-                                                   value="2 shortcut"><label for="question_two1">&nbsp;&nbsp;2
+                                                   value="2"><label for="question_two1">&nbsp;&nbsp;2
                                                 shortcuts</label></li>
                                         <li><input type="radio" required id="question_3" name="question_two"
-                                                   value="3 shortcut"><label for="question_3">&nbsp;&nbsp;3
+                                                   value="3"><label for="question_3">&nbsp;&nbsp;3
                                                 shortcuts</label>
                                         </li>
                                         <li><label><input type="radio" required id="question_4" name="question_two"
-                                                          value="4 shortcut">&nbsp;&nbsp;4 shortcuts</label></li>
+                                                          value="4">&nbsp;&nbsp;4 shortcuts</label></li>
 
                                     </ul>
                                 </div>

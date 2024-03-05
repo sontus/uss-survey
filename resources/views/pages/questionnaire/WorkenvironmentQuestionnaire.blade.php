@@ -132,7 +132,7 @@
                                 @csrf
 
                                 <div class="question">
-                                    <p>To what extend do you consider that the other members in the coding team is your
+                                    <p>(1) To what extend do you consider that the other members in the coding team is your
                                         teammate?</p>
                                     <br>
                                     <input type="hidden" name="next_page"
